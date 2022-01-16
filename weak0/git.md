@@ -22,27 +22,39 @@ Gitはソースコード管理ツールです。ファイルを編集前の状�
 [【Mac】Gitの環境構築をしよう！](https://prog-8.com/docs/git-env)
 
 ## 主なコマンド
+```bash
+$ git clone                   #既存のgitリポジトリのコピーを取得したい場合に使う
+$ git init                    #「.git」というリポジトリを構成するディレクトリを作成
+
+$ git add                     #追加されたファイルなどをGit管理の対象に入れる
+
+$ git commit                  #ファイルの変更をgitレポジトリに保存
+$ git merge                   #別ブランチの変更を統合
+
+$ git pull                    #リモートをローカルに反映
+$ git push                    #コミットした内容を反映
+
+$ git                         #gitコマンド一覧を表示
+$ git diff                    #変更内容を確認
+$ git log                     #ログを見る
+$ git status                  #現状の確認
+
+$ git branch                  #ブランチの確認
+$ git branch [ブランチ名]       #ブランチの作成
+$ git checkout [移動先]        #ブランチの移動
+$ git checkout -b [ブランチ名]  #ブランチを作りながら移動
 ```
-$ git clone //既存のgitリポジトリのコピーを取得したい場合に使う
-$ git init  //「.git」というリポジトリを構成するディレクトリを作成
 
-$ git add //追加されたファイルなどをGit管理の対象に入れる
+## 大学内でGitを使用するとき
+- 大学内でGitをリモートに接続して使うときは proxy の設定をしないと使えないので注意してください。
+- proxy 設定をしたら、解除コマンドを打たない限り自宅などでGitを使えなくなるので注意！
 
-$ git commit //ファイルの変更をgitレポジトリに保存
-$ git merge  //別ブランチの変更を統合
+```bash
+# proxy設定
+$ git config --global http.proxy wwwproxy.kanazawa-it.ac.jp:8080
 
-$ git pull //リモートをローカルに反映
-$ git push //コミットした内容を反映
-
-$ git        //gitコマンド一覧を表示
-$ git diff   //変更内容を確認
-$ git log    //ログを見る
-$ git status //現状の確認
-
-$ git branch                //ブランチの確認
-$ git branch ブランチ名　    　//ブランチの作成
-$ git checkout 移動先　      //ブランチの移動
-$ git checkout -b ブランチ名　//ブランチを作りながら移動
+# proxy解除
+$ git config --global --unset http.proxy
 ```
 
 ## Gitの理解に参考になるサイト

@@ -8,7 +8,7 @@
 - [CirKitプロジェクト](https://www.cirkit.jp/)
 - [Tourismプロジェクト](http://sodeproject.com/tourism-project/)
 - [Bus Stopプロジェクト](http://sodeproject.com/busstop/)
-- スマートフォンアプリプロジェクト
+- [スマートフォンアプリプロジェクト](https://www.notion.so/957f395322ff4826bcfd37c5cca83498)
 
 ## 勉強会の目的
 - Reactを知り、各々のフロントエンドの技術選定の選択肢の一つとなること

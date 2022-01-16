@@ -8,5 +8,11 @@
 2. [yarnのインストール](https://github.com/sekiyan372/react-study-document/blob/main/weak0/yarn.md)
 3. [Gitの環境構築](https://github.com/sekiyan372/react-study-document/blob/main/weak0/git.md)
 
+## 推奨環境
+これは推奨の設定であり無理をして合わせる必要はないが、サンプルはこの環境で作成している。
+
+- ブラウザ: Google Chrome
+- エディター: [VSCode](https://github.com/sekiyan372/react-study-document/blob/main/weak0/vscode.md)
+
 ## 困った時は
 もし環境構築に詰まったら Slack の #環境構築 チャンネルかDMで質問してください。

@@ -5,9 +5,9 @@
 勉強会終了後も公開しておく予定なので、必要に合わせて参考にしてください。
 
 ## 参加プロジェクト
-- CirKitプロジェクト
-- Tourismプロジェクト
-- Bus Stopプロジェクト
+- [CirKitプロジェクト](https://www.cirkit.jp/)
+- [Tourismプロジェクト](http://sodeproject.com/tourism-project/)
+- [Bus Stopプロジェクト](http://sodeproject.com/busstop/)
 - スマートフォンアプリプロジェクト
 
 ## 勉強会の目的

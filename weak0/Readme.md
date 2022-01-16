@@ -2,7 +2,9 @@
 このディレクトリには環境構築用のドキュメントが用意されています。
 
 ## 手順
-それぞれ環境構築が終わっていないものについて環境構築を行なってください。
+それぞれ必要に合わせて環境構築を行なってください。
+
+**ただし、Node.jsのバージョンの違いによるエラーが起きる可能性があるので、Node.jsのバージョンには注意すること**
 
 1. [Node.jsの環境構築](https://github.com/sekiyan372/react-study-document/blob/main/weak0/nodejs.md)
 2. [yarnのインストール](https://github.com/sekiyan372/react-study-document/blob/main/weak0/yarn.md)

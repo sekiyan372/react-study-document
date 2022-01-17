@@ -1,20 +1,33 @@
 # weak0 環境構築
+
 このディレクトリには環境構築用のドキュメントが用意されています。
 
 ## 手順
+
 それぞれ必要に合わせて環境構築を行なってください。
 
-**ただし、Node.jsのバージョンの違いによるエラーが起きる可能性があるので、Node.jsのバージョンには注意してください。**
+**ただし、Node.js のバージョンの違いによるエラーが起きる可能性があるので、Node.js のバージョンには注意してください。**
 
-1. [Node.jsの環境構築](https://github.com/sekiyan372/react-study-document/blob/main/weak0/nodejs.md)
-2. [yarnのインストール](https://github.com/sekiyan372/react-study-document/blob/main/weak0/yarn.md)
-3. [Gitの環境構築](https://github.com/sekiyan372/react-study-document/blob/main/weak0/git.md)
+1. [Node.js の環境構築](https://github.com/sekiyan372/react-study-document/blob/main/weak0/nodejs.md)
+2. [yarn のインストール](https://github.com/sekiyan372/react-study-document/blob/main/weak0/yarn.md)
+3. [Git の環境構築](https://github.com/sekiyan372/react-study-document/blob/main/weak0/git.md)
+4. [サンプルプログラムの実行](https://github.com/sekiyan372/react-study-document/blob/main/weak0/startSample.md)
 
 ## 推奨環境
+
 これは推奨の設定であり無理をして合わせる必要はないですが、サンプルはこの環境で作成しています。
 
 - ブラウザ: Google Chrome
 - エディター: [VSCode](https://github.com/sekiyan372/react-study-document/blob/main/weak0/vscode.md)
 
 ## 困った時は
-もし環境構築に詰まったら Slack の #環境構築 チャンネルかDMで質問してください。
+
+もし環境構築に詰まったら Slack の #環境構築 チャンネルか DM で質問してください。
+
+## ２週目以降の勉強会について
+
+こちらのサンプルは適宜更新していく予定なので、毎週勉強会が始まるまでに以下のコマンドをサンプルのディレクトリで実行しておいてください。
+
+```bash
+$ git pull origin main
+```

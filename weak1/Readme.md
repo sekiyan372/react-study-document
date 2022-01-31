@@ -6,3 +6,4 @@
 2. [知ってて欲しい！モダン JS の知識](./modernJS.md)
 3. [JS のフレームワーク・ライブラリ紹介](./framework.md)
 4. [TypeScript の紹介](./typescript.md)
+5. [練習問題をやってみよう](https://github.com/sekiyan372/react-study-sample/blob/main/src/utils/weak1.ts)

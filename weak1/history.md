@@ -23,4 +23,7 @@
 ### 2010年代
 - 2010年代前半：AltJS (`TypeScript`, `CoffeeScrit`, `Dart` など) の登場
 - 2015年：`ECMA Script2015 (ES6)` で標準化
-- 2010年代後半：フレームワーク (`React`, `Vue`, `Anguler`) が主流に
+- 2010年代後半：`React`, `Vue`, `Anguler` の台頭
+
+## 2020年代
+- React が主流に？

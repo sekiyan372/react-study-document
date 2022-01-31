@@ -25,8 +25,8 @@
 
 ### [weak1 2/3(木)](https://github.com/sekiyan372/react-study-document/blob/main/weak1)
 - 各プロジェクト紹介
-- JSの歴史
-- JSフレームワークの紹介
+- JSの歴史と基礎知識
+- JSフレームワーク・ライブラリの紹介
 - TypeScriptについて
 
 ### [weak2 2/10(木)](https://github.com/sekiyan372/react-study-document/blob/main/weak2)

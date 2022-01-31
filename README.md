@@ -7,7 +7,7 @@
 
 ## 参加プロジェクト
 - [CirKitプロジェクト](https://www.cirkit.jp/)
-- [Tourismプロジェクト](http://sodeproject.com/tourism-project/)
+- [Tourismプロジェクト](http://tourism-project.com/)
 - [Bus Stopプロジェクト](http://sodeproject.com/busstop/)
 - [スマートフォンアプリプロジェクト](https://www.notion.so/957f395322ff4826bcfd37c5cca83498)
 
@@ -19,35 +19,36 @@
 ## 勉強会のスケジュール
 ※内容は変更になる可能性があります
 
-### [weak0（事前準備）](https://github.com/sekiyan372/react-study-document/blob/main/weak0)
+### [weak0（事前準備）](/weak0/README.md)
 - Slackへの参加
 - 環境構築
 
-### [weak1 2/3(木)](https://github.com/sekiyan372/react-study-document/blob/main/weak1)
+### [weak1 2/3(木)](/weak1/README.md)
 - 各プロジェクト紹介
-- JSの歴史と基礎知識
-- JSフレームワーク・ライブラリの紹介
+- [JSの歴史](/weak1/history.md)
+- [知ってて欲しい！モダンJSの知識](/weak1/modernJS.md)
+- [JS のフレームワーク・ライブラリ紹介](/weak1/framework.md)
 - TypeScriptについて
 
-### [weak2 2/10(木)](https://github.com/sekiyan372/react-study-document/blob/main/weak2)
+### [weak2 2/10(木)](/weak2/README.md)
 - JSX記法
 - CSS in JS
 - 変数・関数定義と使用
 - Props
 - コンポーネント思考
 
-### [weak3 2/17(木)](https://github.com/sekiyan372/react-study-document/blob/main/weak3)
+### [weak3 2/17(木)](/weak3/README.md)
 - 状態管理
 - レンダリング
 
-### [weak4 2/24(木)](https://github.com/sekiyan372/react-study-document/blob/main/weak4)
+### [weak4 2/24(木)](/weak4/README.md)
 - Hooksの使い方
 
-### [weak5 3/3(木)](https://github.com/sekiyan372/react-study-document/blob/main/weak5)
+### [weak5 3/3(木)](/weak5/README.md)
 - Next.js、Gatuby.jsについて
 - SPA、SSR、SSG、ISRについて
 
-### [weak6 3/10(木)](https://github.com/sekiyan372/react-study-document/blob/main/weak6)
+### [weak6 3/10(木)](/weak6/README.md)
 - Webアプリ制作
 - Webアプリの公開
 

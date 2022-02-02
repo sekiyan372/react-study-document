@@ -76,3 +76,12 @@ const numbers = [0, 1, 2, 3, 4]
   ))}
 </ul>
 ```
+
+また、関数も実行できます。
+
+```typescript
+const plusOne = (num: number) => num + 1
+
+//関数の返り値 101 が表示される
+<div>{ plusOne(100) }</div>
+```

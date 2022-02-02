@@ -1,3 +1,4 @@
 # weak2
 
-1. [JSX 記法](./jsx.md)
+1. [React の基本](./reactBasic.md)
+2. [JSX 記法](./jsx.md)

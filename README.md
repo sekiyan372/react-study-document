@@ -31,11 +31,11 @@
 - [TypeScript の紹介](/weak1/typescript.md)
 
 ### [weak2 2/10(木)](/weak2/README.md)
+- [React の基本](/weak2/reactBasic.md)
 - [JSX 記法](/weak2/jsx.md)
-- CSS in JS
-- 変数・関数定義と使用
-- Props
 - コンポーネント思考
+- CSS in JS
+- Props
 
 ### [weak3 2/17(木)](/weak3/README.md)
 - 状態管理

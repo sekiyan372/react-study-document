@@ -31,7 +31,7 @@
 - [TypeScript の紹介](/weak1/typescript.md)
 
 ### [weak2 2/10(木)](/weak2/README.md)
-- JSX 記法
+- [JSX 記法](/weak2/jsx.md)
 - CSS in JS
 - 変数・関数定義と使用
 - Props

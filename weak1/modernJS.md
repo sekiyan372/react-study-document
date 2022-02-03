@@ -1,5 +1,7 @@
 # 知ってて欲しい！モダンJSの知識
+
 ## 変数宣言
+
 **var は使わずに let と const を使う**
 
 変数宣言方法による仕様
@@ -24,6 +26,7 @@ const val = "hello"  //×
 ```
 
 ## テンプレート文字列
+
 文字列の中に変数を埋め込む書き方
 
 ```javascript
@@ -35,6 +38,7 @@ console.log(`私の名前は${name}で、${age}歳です。`)
 ```
 
 ## アロー関数
+
 シンプルに書ける関数の書き方
 
 従来の関数
@@ -58,9 +62,11 @@ const func = (value) => {
 ```
 
 ## 分割代入
+
 オブジェクトや配列から値を抽出する方法
 
 ### オブジェクトの分割代入
+
 ```javascript
 const profile = {
   name: "関谷",
@@ -78,6 +84,7 @@ console.log(`私の名前は${newName}で、${newAge}歳です。`)
 ```
 
 ### 配列の分割代入
+
 ```javascript
 const profile = ["関谷", 25]
 
@@ -88,6 +95,7 @@ console.log(`私の名前は${name}で、${age}歳です。`)
 ```
 
 ## スプレッド構文
+
 配列やオブジェクトの処理をまとめて書く記法
 
 ```javascript
@@ -99,9 +107,11 @@ console.log(addNum(...nums))
 ```
 
 ## map, filter 関数
+
 モダンな書き方では for 文を使う機会は少なく、map や filter といった関数を駆使して書く場合がほとんどです！
 
 ### map
+
 配列を順番に処理して、処理した結果を `新しい配列として` 返す
 
 ```javascript
@@ -113,6 +123,7 @@ console.log(...doubleNum)
 ```
 
 ### filter
+
 配列を順番に処理して、条件に一致した値のみを抽出した `新しい配列として` 返す
 
 ```javascript

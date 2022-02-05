@@ -5,3 +5,4 @@
 1. [React の基本](./reactBasic.md)
 2. [JSX 記法](./jsx.md)
 3. [コンポーネント思考](./component.md)
+4. [Props](./props.md)

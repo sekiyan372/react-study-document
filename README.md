@@ -42,7 +42,7 @@
 - [React の基本](/week2/reactBasic.md)
 - [JSX 記法](/week2/jsx.md)
 - [コンポーネント思考](/week2/component.md)
-- Props
+- [Props](/week2/props.md)
 - CSS in JS
 - ルーティング
 

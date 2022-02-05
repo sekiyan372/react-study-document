@@ -8,3 +8,4 @@
 4. [Props](./props.md)
 5. [Style](./style.md)
 6. [ルーティング](./routing.md)
+7. [練習問題をやってみよう](./exercise.md)

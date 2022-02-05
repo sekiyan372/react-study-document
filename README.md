@@ -44,7 +44,7 @@
 - [コンポーネント思考](/week2/component.md)
 - [Props](/week2/props.md)
 - [Style](/week2/style.md)
-- ルーティング
+- [ルーティング](/week2/routing.md)
 
 ### [week3 2/17(木)](/week3/README.md)
 

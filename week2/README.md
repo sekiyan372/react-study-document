@@ -7,3 +7,4 @@
 3. [コンポーネント思考](./component.md)
 4. [Props](./props.md)
 5. [Style](./style.md)
+6. [ルーティング](./routing.md)

@@ -6,3 +6,4 @@
 2. [JSX 記法](./jsx.md)
 3. [コンポーネント思考](./component.md)
 4. [Props](./props.md)
+5. [Style](./style.md)

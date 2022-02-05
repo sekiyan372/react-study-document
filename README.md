@@ -43,7 +43,7 @@
 - [JSX 記法](/week2/jsx.md)
 - [コンポーネント思考](/week2/component.md)
 - [Props](/week2/props.md)
-- CSS in JS
+- [Style](/week2/style.md)
 - ルーティング
 
 ### [week3 2/17(木)](/week3/README.md)

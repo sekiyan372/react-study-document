@@ -21,21 +21,25 @@ ReactDOM.render(
   document.getElementById('root')
 )
 ```
-3. ブラウザを開いて http://localhost:3000/weak1/hello にアクセスする
+3. 以下のコマンドでサーバーを起動
+```bash
+$ yarn start
+```
+4. ブラウザを開いて http://localhost:3000/week1/hello/ にアクセスする
 
 ## 演習問題
 
-問題は `/src/utils/weak1.ts` にあります。問題文に従って回答をしてください。
+問題は `/src/utils/week1.ts` にあります。問題文に従って回答をしてください。
 
 ### 実行方法
 
-1. `/src/pages/weak1/Hello.tsx` のコメントアウトされている import 文を有効にする
+1. `/src/pages/week1/Hello.tsx` のコメントアウトされている import 文を有効にする
 2. 作成した関数を import 文に追加する
 ```typescript
 import {
   sample,
   ex1,     //ここを追加
-} from '~/utils/weak1'
+} from '~/utils/week1'
 ```
 3. App コンポーネント内で関数を実行数する
 ```typescript

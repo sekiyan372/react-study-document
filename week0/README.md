@@ -1,4 +1,4 @@
-# weak0 環境構築
+# week0 環境構築
 
 このディレクトリには環境構築用のドキュメントが用意されています。
 
@@ -8,17 +8,17 @@
 
 **ただし、Node.js のバージョンの違いによるエラーが起きる可能性があるので、Node.js のバージョンには注意してください。**
 
-1. [Node.js の環境構築](https://github.com/sekiyan372/react-study-document/blob/main/weak0/nodejs.md)
-2. [yarn のインストール](https://github.com/sekiyan372/react-study-document/blob/main/weak0/yarn.md)
-3. [Git の環境構築](https://github.com/sekiyan372/react-study-document/blob/main/weak0/git.md)
-4. [サンプルプログラムの実行](https://github.com/sekiyan372/react-study-document/blob/main/weak0/startSample.md)
+1. [Node.js の環境構築](./nodejs.md)
+2. [yarn のインストール](./yarn.md)
+3. [Git の環境構築](./git.md)
+4. [サンプルプログラムの実行](./startSample.md)
 
 ## 推奨環境
 
 これは推奨の設定であり無理をして合わせる必要はないですが、サンプルはこの環境で作成しています。
 
 - ブラウザ: Google Chrome
-- エディター: [VSCode](https://github.com/sekiyan372/react-study-document/blob/main/weak0/vscode.md)
+- エディター: [VSCode](./vscode.md)
 
 ## 困った時は
 

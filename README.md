@@ -24,43 +24,43 @@
 
 ※内容は変更になる可能性があります
 
-### [weak0（事前準備）](/weak0/README.md)
+### [week0（事前準備）](/week0/README.md)
 
 - Slack への参加
 - 環境構築
 
-### [weak1 2/3(木)](/weak1/README.md)
+### [week1 2/3(木)](/week1/README.md)
 
 - 各プロジェクト紹介
-- [JS の歴史](/weak1/history.md)
-- [知ってて欲しい！モダンJSの知識](/weak1/modernJS.md)
-- [JS のフレームワーク・ライブラリ紹介](/weak1/framework.md)
-- [TypeScript の紹介](/weak1/typescript.md)
+- [JS の歴史](/week1/history.md)
+- [知ってて欲しい！モダンJSの知識](/week1/modernJS.md)
+- [JS のフレームワーク・ライブラリ紹介](/week1/framework.md)
+- [TypeScript の紹介](/week1/typescript.md)
 
-### [weak2 2/10(木)](/weak2/README.md)
+### [week2 2/10(木)](/week2/README.md)
 
-- [React の基本](/weak2/reactBasic.md)
-- [JSX 記法](/weak2/jsx.md)
+- [React の基本](/week2/reactBasic.md)
+- [JSX 記法](/week2/jsx.md)
 - コンポーネント思考
 - Props
 - CSS in JS
 - ルーティング
 
-### [weak3 2/17(木)](/weak3/README.md)
+### [week3 2/17(木)](/week3/README.md)
 
 - 状態管理
 - レンダリング
 
-### [weak4 2/24(木)](/weak4/README.md)
+### [week4 2/24(木)](/week4/README.md)
 
 - Hooks の使い方
 
-### [weak5 3/3(木)](/weak5/README.md)
+### [week5 3/3(木)](/week5/README.md)
 
 - Next.js、Gatuby.js について
 - SPA、SSR、SSG、ISR について
 
-### [weak6 3/10(木)](/weak6/README.md)
+### [week6 3/10(木)](/week6/README.md)
 
 - Web アプリ制作
 - Web アプリの公開

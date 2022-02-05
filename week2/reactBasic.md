@@ -1,4 +1,5 @@
 # React の基本
+[サンプルプログラム](https://github.com/sekiyan372/react-study-sample/blob/main/src/index.tsx)
 
 ブラウザで React を動作させるには、最低限 `React` と `ReactDOM` という2つのライブラリが必要になります。
 

@@ -1,4 +1,5 @@
 # コンポーネント 思考
+[サンプルプログラム](https://github.com/sekiyan372/react-study-sample/blob/main/src/pages/week2/ComponentSample.tsx)
 
 ## コンポーネントとは？
 

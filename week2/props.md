@@ -1,4 +1,5 @@
 # Props
+[サンプルプログラム](https://github.com/sekiyan372/react-study-sample/blob/main/src/pages/week2/PropsSample.tsx)
 
 ## Props とは？
 

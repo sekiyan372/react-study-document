@@ -50,16 +50,18 @@
 
 - [状態管理](/week3/state.md)
 - [状態管理の例](/week3/stateSample.md)
-- レンダリング
+- グローバルな状態管理
 
 ### [week4 2/24(木)](/week4/README.md)
 
-- Hooks の使い方
+- レンダリング
+- レンダリングの最適化
 
 ### [week5 3/3(木)](/week5/README.md)
 
-- Next.js、Gatuby.js について
-- SPA、SSR、SSG、ISR について
+- React ベースのフレームワーク
+- Next.js
+- SSR、SSG、ISR について
 
 ### [week6 3/10(木)](/week6/README.md)
 

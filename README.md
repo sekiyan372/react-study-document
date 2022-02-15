@@ -48,7 +48,8 @@
 
 ### [week3 2/17(木)](/week3/README.md)
 
-- 状態管理
+- [状態管理](/week3/state.md)
+- [状態管理の例](/week3/stateSample.md)
 - レンダリング
 
 ### [week4 2/24(木)](/week4/README.md)

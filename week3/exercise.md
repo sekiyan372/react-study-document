@@ -8,6 +8,8 @@
 
 ※データを永続化する必要はありません（リロードしたら消えて良い）
 
+[問題で使用するファイル](https://github.com/sekiyan372/react-study-sample/blob/main/src/pages/week3/Ex.tsx)
+
 ## オプション問題
 
 作成したアプリで、メモを個別で削除できるよう実装しなさい。

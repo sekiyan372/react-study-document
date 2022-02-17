@@ -50,7 +50,7 @@
 
 - [状態管理](/week3/state.md)
 - [状態管理の例](/week3/stateSample.md)
-- グローバルな状態管理
+- [状態管理の拡張](/week3/globalState.md)
 
 ### [week4 2/24(木)](/week4/README.md)
 

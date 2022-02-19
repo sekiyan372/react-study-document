@@ -54,7 +54,7 @@
 
 ### [week4 2/24(木)](/week4/README.md)
 
-- レンダリング
+- [レンダリング](/week4/rendering.md)
 - レンダリングの最適化
 
 ### [week5 3/3(木)](/week5/README.md)

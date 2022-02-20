@@ -55,7 +55,8 @@
 ### [week4 2/24(木)](/week4/README.md)
 
 - [レンダリング](/week4/rendering.md)
-- レンダリングの最適化
+- [useEffect を使ったサンプルプログラム](/week4/useEffectSample.md)
+- [レンダリングの最適化](/week4/optimization.md)
 
 ### [week5 3/3(木)](/week5/README.md)
 

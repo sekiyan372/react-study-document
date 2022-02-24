@@ -60,9 +60,9 @@
 
 ### [week5 3/3(木)](/week5/README.md)
 
-- React ベースのフレームワーク
-- Next.js
-- SSR、SSG、ISR について
+- [レンダリング手法](/week5/renderingMethod.md)
+- [React ベースのフレームワーク](/week5/framework.md)
+- [Next.js](/week5/nextjs.md)
 - [week6 の準備](/week5/preparation.md)
 
 ### [week6 3/10(木)](/week6/README.md)

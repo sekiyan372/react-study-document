@@ -1,6 +1,6 @@
 # week5
 
-1. React ベースのフレームワーク
-2. Next.js
-3. SSR、SSG、ISR について
+1. [レンダリング手法](./renderingMethod.md)
+2. [React ベースのフレームワーク](./framework.md)
+3. [Next.js](./nextjs.md)
 4. [week6 の準備](./preparation.md)

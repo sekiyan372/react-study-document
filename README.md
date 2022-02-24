@@ -1,4 +1,4 @@
-# 4プロジェクト合同React勉強会 -明日から君もフロントエンドエンジニア-
+# 4 プロジェクト合同 React 勉強会 -明日から君もフロントエンドエンジニア-
 
 [勉強会用サンプルプログラム](https://github.com/sekiyan372/react-study-sample)
 
@@ -33,7 +33,7 @@
 
 - 各プロジェクト紹介
 - [JS の歴史](/week1/history.md)
-- [知ってて欲しい！モダンJSの知識](/week1/modernJS.md)
+- [知ってて欲しい！モダン JS の知識](/week1/modernJS.md)
 - [JS のフレームワーク・ライブラリ紹介](/week1/framework.md)
 - [TypeScript の紹介](/week1/typescript.md)
 
@@ -67,8 +67,7 @@
 
 ### [week6 3/10(木)](/week6/README.md)
 
-- Web アプリ制作
-- Web アプリの公開
+- [ブログ作成](/week6/blog.md)
 
 ## 参加するにあたって知っておいてほしい前提知識
 
@@ -80,5 +79,5 @@
 
 ## 今回参考にしている書籍
 
-- [モダンJavaScriptの基本から始める React実践の教科書](https://www.amazon.co.jp/%E3%83%A2%E3%83%80%E3%83%B3JavaScript%E3%81%AE%E5%9F%BA%E6%9C%AC%E3%81%8B%E3%82%89%E5%A7%8B%E3%82%81%E3%82%8B-React%E5%AE%9F%E8%B7%B5%E3%81%AE%E6%95%99%E7%A7%91%E6%9B%B8-%E6%9C%80%E6%96%B0ReactHooks%E5%AF%BE%E5%BF%9C-Informatics-IDEA/dp/481561072X)
-- [Reactハンズオンラーニング 第2版 ―Webアプリケーション開発のベストプラクティス](https://www.amazon.co.jp/React%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B3%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0-%E7%AC%AC2%E7%89%88-%E2%80%95Web%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E9%96%8B%E7%99%BA%E3%81%AE%E3%83%99%E3%82%B9%E3%83%88%E3%83%97%E3%83%A9%E3%82%AF%E3%83%86%E3%82%A3%E3%82%B9-Alex-Banks/dp/4873119383)
+- [モダン JavaScript の基本から始める React 実践の教科書](https://www.amazon.co.jp/%E3%83%A2%E3%83%80%E3%83%B3JavaScript%E3%81%AE%E5%9F%BA%E6%9C%AC%E3%81%8B%E3%82%89%E5%A7%8B%E3%82%81%E3%82%8B-React%E5%AE%9F%E8%B7%B5%E3%81%AE%E6%95%99%E7%A7%91%E6%9B%B8-%E6%9C%80%E6%96%B0ReactHooks%E5%AF%BE%E5%BF%9C-Informatics-IDEA/dp/481561072X)
+- [React ハンズオンラーニング 第 2 版 ―Web アプリケーション開発のベストプラクティス](https://www.amazon.co.jp/React%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B3%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0-%E7%AC%AC2%E7%89%88-%E2%80%95Web%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E9%96%8B%E7%99%BA%E3%81%AE%E3%83%99%E3%82%B9%E3%83%88%E3%83%97%E3%83%A9%E3%82%AF%E3%83%86%E3%82%A3%E3%82%B9-Alex-Banks/dp/4873119383)

@@ -63,6 +63,7 @@
 - React ベースのフレームワーク
 - Next.js
 - SSR、SSG、ISR について
+- [week6 の準備](/week5/preparation.md)
 
 ### [week6 3/10(木)](/week6/README.md)
 

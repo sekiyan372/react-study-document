@@ -62,13 +62,14 @@
 
 - [レンダリング手法](/week5/renderingMethod.md)
 - [React ベースのフレームワーク](/week5/framework.md)
+- [Next.js の使用説明](/week5/nextjs.md)
 - [week6 で使用するサービスの紹介](/week5/week6tech.md)
 - [week6 の準備](/week5/preparation.md)
 
 ### [week6 3/10(木)](/week6/README.md)
 
 - [ブログ作成](/week6/blog.md)
-- [microCMSの操作説明](/week6/microcms.md)
+- [microCMS の操作説明](/week6/microcms.md)
 
 ## 参加するにあたって知っておいてほしい前提知識
 

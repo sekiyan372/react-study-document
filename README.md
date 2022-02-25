@@ -68,6 +68,7 @@
 ### [week6 3/10(木)](/week6/README.md)
 
 - [ブログ作成](/week6/blog.md)
+- [microCMSの操作説明](/week6/microcms.md)
 
 ## 参加するにあたって知っておいてほしい前提知識
 

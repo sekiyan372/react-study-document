@@ -62,7 +62,7 @@
 
 - [レンダリング手法](/week5/renderingMethod.md)
 - [React ベースのフレームワーク](/week5/framework.md)
-- [Next.js の使用説明](/week5/nextjs.md)
+- [Next.js の機能説明](/week5/nextjs.md)
 - [week6 で使用するサービスの紹介](/week5/week6tech.md)
 - [week6 の準備](/week5/preparation.md)
 

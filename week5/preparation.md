@@ -72,9 +72,7 @@ $ yarn dev
 2. clone したディレクトリで以下を実行
 
 ```bash
-$ git add -A
-$ git commit -m "first commit"
-$ git branch -M main
+$ git remote rm origin
 $ git remote add origin [リポジトリのurl].git
 $ git push -u origin main
 ```

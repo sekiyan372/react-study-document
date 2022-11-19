@@ -19,11 +19,11 @@ App コンポーネントでできることには以下のような例があり�
 
 以下は week6 で使うブログの \_app.tsx です。
 
-```typescript
-import "~/globals.css"
-import { NextPage } from "next"
-import type { AppProps } from "next/app"
-import Footer from "~/components/Footer"
+```tsx
+import "~/globals.css";
+import { NextPage } from "next";
+import type { AppProps } from "next/app";
+import Footer from "~/components/Footer";
 
 const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
   return (
@@ -33,8 +33,8 @@ const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
       </main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
 export default MyApp;
 ```
@@ -49,15 +49,15 @@ Next.js の Page コンポーネントはデフォルトでは<html>・<body>タ
 
 以下は week6 で使うブログの \_document.tsx です。
 
-```typescript
+```tsx
 import Document, {
   DocumentContext,
   Html,
   Head,
   Main,
   NextScript,
-} from "next/document"
-import { ServerStyleSheet } from "styled-components"
+} from "next/document";
+import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
   //中略
@@ -71,7 +71,7 @@ export default class MyDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
 ```
@@ -119,8 +119,8 @@ Next.js では `[id].js(tsx)` という形式でファイルを作成すると�
 ```typescript
 export const getStaticPaths = async () => {
   // 外部APIエンドポイントを呼び出しデータ取得
-  const res = await fetch("https://.../posts")
-  const posts = await res.json()
+  const res = await fetch("https://.../posts");
+  const posts = await res.json();
 
   // 事前ビルドしたいパスを指定
   const paths = posts.map((post) => ({
@@ -128,11 +128,11 @@ export const getStaticPaths = async () => {
       // ファイル名と合わせる ※文字列指定
       id: post.id.toString(),
     },
-  }))
+  }));
   // paths：事前ビルドするパス対象を指定するパラメータ
   // fallback：事前ビルドしたパス以外にアクセスしたときのパラメータ true:カスタム404Pageを表示 false:404pageを表示
-  return { paths, fallback: false }
-}
+  return { paths, fallback: false };
+};
 ```
 
 ### next/link
@@ -142,11 +142,11 @@ Next.js では内部リンク用のコンポーネントが `next/link` とし�
 `next/link` は Props である `href` で、パス＋クエリ文字列を渡すことでその遷移先へ移動します。この Props は必須となっています。
 
 ```typescript
-import Link from "next/link"
+import Link from "next/link";
 
 <Link href="/about">
   <a>こちら</a>
-</Link>
+</Link>;
 ```
 
 その他にも `next/link` には設定できる Props があるので、詳細は[ドキュメント](https://nextjs-ja-translation-docs.vercel.app/docs/api-reference/next/link)を参照してください。
@@ -159,15 +159,10 @@ next/image とは画像サイズと拡張子をデバイスとブラウザに応
 
 設定できる Props は HTML の img タグと似ていますが、固有の幅と高さを設定できます（これは単位を持たない値であり、比率のようなものです。実際の値は最適化されます。）
 
-```typescript
-import Image from "next/image"
+```tsx
+import Image from "next/image";
 
-<Image
-  src="/me.png"
-  alt="Picture of the author"
-  width={500}
-  height={500}
-/>
+<Image src="/me.png" alt="Picture of the author" width={500} height={500} />;
 ```
 
 その他にも `next/image` には設定できる Props があるので、詳細は[ドキュメント](https://nextjs-ja-translation-docs.vercel.app/docs/api-reference/next/image)を参照してください。
@@ -183,12 +178,12 @@ import Image from "next/image"
 ```typescript
 const Blog = ({ posts }) => {
   // Render data...
-}
+};
 
 export const getStaticProps = async () => {
   // posts を取得するため外部 API endpoint を読み込む
-  const res = await fetch("https://.../posts")
-  const posts = await res.json()
+  const res = await fetch("https://.../posts");
+  const posts = await res.json();
 
   // { props: { posts } }を返すことで、
   // Blog コンポーネントはビルド時に`posts`を prop として受け取る
@@ -196,8 +191,8 @@ export const getStaticProps = async () => {
     props: {
       posts,
     },
-  }
-}
+  };
+};
 
 export default Blog;
 ```
@@ -213,19 +208,19 @@ export default Blog;
 ```typescript
 const Page = ({ data }) => {
   // Render data...
-}
+};
 
 // すべてのリクエストの度に実行される
 export const getServerSideProps = async () => {
   // 外部APIからデータフェッチ
-  const res = await fetch(`https://.../data`)
-  const data = await res.json()
+  const res = await fetch(`https://.../data`);
+  const data = await res.json();
 
   // props を通じて Page に data を渡す
-  return { props: { data } }
-}
+  return { props: { data } };
+};
 
-export default Page
+export default Page;
 ```
 
 使い方は getStaticProps とほぼ同じです。違いは getServerSideProps はビルド時ではなくてすべてのリクエストの度に実行されるということです。
@@ -238,16 +233,16 @@ Next.js で ISR を実装するには、ISR をしたいページのコンポー
 
 ```typescript
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const res = await fetch("https://.../posts")
-  const posts = await res.json()
+  const res = await fetch("https://.../posts");
+  const posts = await res.json();
 
   return {
     props: {
       posts,
     },
     revalidate: 10, // 👈 ポイント
-  }
-}
+  };
+};
 ```
 
 このようにすると、キャッシュが作られた後 10 秒間はそのキャッシュを返し、10 秒経ったあとはキャッシュが古くなったとみなされる。ただし次のリクエストでも一旦はそのキャッシュを返し、その裏でキャッシュが再生成されて、次のリクエストでは再生成されたキャッシュを返します。
@@ -261,8 +256,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: [], // アプリのビルド時にはパスに何が入るかが分からないので空でOK
     fallback: "blocking", // 👈 ポイント
-  }
-}
+  };
+};
 ```
 
 `fallback: 'blocking'` は、ざっくりというと**キャッシュがまだ作られていないときは SSR を行う**という指定になります。指定しなかった場合、初回リクエスト（キャッシュ未生成時）には SPA のような動きになります。TwitterBot などのクローラーが動的に生成されたコンテンツの中身を読めるようにするために `fallback: 'blocking'` を指定しておいた方が良いと思います。

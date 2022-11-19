@@ -11,42 +11,42 @@
 ここで用意されている count はカウンターの State です。
 
 ```typescript
-const [count, setCount] = useState<number>(0)
+const [count, setCount] = useState<number>(0);
 ```
 
 表示部分ではカウンターの値とカウントアップ用のボタンが表示されています。
 
-```typescript
+```tsx
 return (
   <Wrapper>
     <View>{count}</View>
     <button onClick={() => setCount(count + 1)}>+1</button>
   </Wrapper>
-)
+);
 ```
 
 1 つ目の useEffect の処理はレンダリング時常に動作をして、コンソールに文字を出力します。
 
 ```typescript
 useEffect(() => {
-  console.log(`${count}: render constantly`)
-})
+  console.log(`${count}: render constantly`);
+});
 ```
 
 2 つ目の useEffect の処理は初回のレンダリング時のみ動作をし、コンソールに文字を出力します。
 
 ```typescript
 useEffect(() => {
-  console.log(`${count}: render first`)
-}, [])
+  console.log(`${count}: render first`);
+}, []);
 ```
 
 3 つ目の useEffect の処理は count が更新された時のみ動作をし、コンソールに文字を出力します。
 
 ```typescript
 useEffect(() => {
-  console.log(`${count}: render when count up`)
-}, [count])
+  console.log(`${count}: render when count up`);
+}, [count]);
 ```
 
 ## API からデータを取得
@@ -65,9 +65,9 @@ useEffect に渡す関数の戻り値はクリーンアップ関数でなくて�
 
 ```typescript
 useEffect(async () => {
-  const response = await fetch("APIのURL")
-  const data = await response.json()
-}, [])
+  const response = await fetch("APIのURL");
+  const data = await response.json();
+}, []);
 ```
 
 これを直すには、2 つの書き方のどちらかに直せばいいです。
@@ -79,10 +79,10 @@ useEffect(async () => {
 ```typescript
 useEffect(() => {
   (async () => {
-    const response = await fetch("APIのURL")
-    const data = await response.json()
-  })()
-}, [])
+    const response = await fetch("APIのURL");
+    const data = await response.json();
+  })();
+}, []);
 ```
 
 #### 書き方 2: 変数に関数を代入して使う方法
@@ -92,11 +92,11 @@ useEffect(() => {
 ```typescript
 useEffect(() => {
   const f = async () => {
-    const response = await fetch("APIのURL")
-    const data = await response.json()
-  }
-  f()
-}, [])
+    const response = await fetch("APIのURL");
+    const data = await response.json();
+  };
+  f();
+}, []);
 ```
 
 ### サンプルプログラム解説
@@ -121,22 +121,24 @@ const [posts, setPosts] = useState<Post[]>([]);
 ```typescript
 useEffect(() => {
   const fetchPost = async (): Promise<Post[]> => {
-    const response = await fetch('https://jsonplaceholder.typicode.com/posts')
-    return await response.json()
-  }
-  fetchPost().then((data) => setPosts(data))
-}, [])
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+    return await response.json();
+  };
+  fetchPost().then((data) => setPosts(data));
+}, []);
 ```
 
 表示部分では map 関数を使用して posts の情報を全て表示しています。
 
-```typescript
-{posts.map((post) => (
-  <Card key={post.id}>
-    <div>{post.title}</div>
-    <div>{post.body}</div>
-  </Card>
-))}
+```tsx
+{
+  posts.map((post) => (
+    <Card key={post.id}>
+      <div>{post.title}</div>
+      <div>{post.body}</div>
+    </Card>
+  ));
+}
 ```
 
 ## よくやる間違い
@@ -173,26 +175,26 @@ const [count2, setCount2] = useState<number>(0)
 
 ```typescript
 useEffect(() => {
-  setCount2(count2 + 1)
-}, [count1])
+  setCount2(count2 + 1);
+}, [count1]);
 ```
 
 ここで、コメントアウトになっている部分を外すと無限ループが長谷生します。
 
-上の useEffect では中で count1 を +1 しているだけですが、第2引数を指定していないため、レンダリングが起きるごとに呼び出されてしまうため先ほど説明した無限ループに陥ります。
+上の useEffect では中で count1 を +1 しているだけですが、第 2 引数を指定していないため、レンダリングが起きるごとに呼び出されてしまうため先ほど説明した無限ループに陥ります。
 
 ```typescript
 useEffect(() => {
-  setCount1(count1 + 1)
-})
+  setCount1(count1 + 1);
+});
 ```
 
-下の useEffect では count2 を +1 しているだけですが、第2引数の配列にも count2 が設定されており、このため count2 が変更されるごとに呼び出され自身でまた変更して呼び出すという無限ループに陥っています。
+下の useEffect では count2 を +1 しているだけですが、第 2 引数の配列にも count2 が設定されており、このため count2 が変更されるごとに呼び出され自身でまた変更して呼び出すという無限ループに陥っています。
 
 ```typescript
 useEffect(() => {
-  setCount2(count2 + 1)
-}, [count2])
+  setCount2(count2 + 1);
+}, [count2]);
 ```
 
 無限ループに陥るパターンを理解して、そうならないよう注意しましょう。

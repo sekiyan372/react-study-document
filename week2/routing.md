@@ -1,9 +1,10 @@
 # ルーティング
+
 [サンプルプログラム](https://github.com/sekiyan372/react-study-sample/blob/main/src/Router.tsx)
 
 ## React Router
 
-複数のページを持つサイトでは、どのURLにどのページ（コンポーネント）を割り当てるのか、いわゆるルーティングが必要になります。それを実装できるライブラリが React Router になります。
+複数のページを持つサイトでは、どの URL にどのページ（コンポーネント）を割り当てるのか、いわゆるルーティングが必要になります。それを実装できるライブラリが React Router になります。
 
 ## ルーティング設定
 
@@ -11,28 +12,22 @@
 
 そして、それぞれのページにアクセスがあったときにルーティングを行えるように `Routes` を設定して、その中に `Route` でどの URL にどのページコンポーネントを対応させるのかを設定します。
 
-Route コンポーネントでは、`path` にURLを、`element` に対するページコンポーネントを指定します。
+Route コンポーネントでは、`path` に URL を、`element` に対するページコンポーネントを指定します。
 
-path では、ルートは `/` に設定します。設定していないパスにアクセスされた場合には `*` を設定することでその場合に表示するページ (404ページ) を設定できます。
+path では、ルートは `/` に設定します。設定していないパスにアクセスされた場合には `*` を設定することでその場合に表示するページ (404 ページ) を設定できます。
 
 `Routes` の外側に要素を置くと、全ページで共通して表示される要素を設定することができます（header や footer に使えますね）。
 
-```typescript
-import ReactDOM from 'react-dom'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
-ReactDOM.render(
-  <BrowserRouter>
-    <h1>Hello React Router v6</h1>
-    <Routes>
-      <Route path="/" element={<Top />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="*" element={<NotFound> />} />
-    </Routes>
-  </BrowserRouter>,
-  document.getElementById('root')
-)
+```tsx
+<BrowserRouter>
+  <h1>Hello React Router v6</h1>
+  <Routes>
+    <Route path="/" element={<Top />} />
+    <Route path="/about" element={<About />} />
+    <Route path="/contact" element={<Contact />} />
+    <Route path="*" element={<NotFound> />} />
+  </Routes>
+</BrowserRouter>
 ```
 
 ## より複雑なルーティング

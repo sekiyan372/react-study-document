@@ -4,4 +4,4 @@
 
 (2) 作成したコンポーネントを /src/pages/Ex.tsx に表示しなさい
 
-(3) 練習問題2の Ex.tsx を styled-component を使用していい感じにしなさい
+(3) 練習問題 2 の Ex.tsx を styled-component を使用していい感じにしなさい

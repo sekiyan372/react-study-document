@@ -1,4 +1,5 @@
 # JSX 記法
+
 [サンプルプログラム](https://github.com/sekiyan372/react-study-sample/blob/main/src/pages/week2/Jsx.tsx)
 
 ## JSX 記法とは？
@@ -9,9 +10,9 @@ JS (TS) ファイルの中で HTML のようなタグを書く記法です。
 
 ### return 以降は一つのタグで囲う
 
-return で返せる要素は1つまでです。return以降で複数の要素を返す場合は、一つのタグで囲いましょう。
+return で返せる要素は 1 つまでです。return 以降で複数の要素を返す場合は、一つのタグで囲いましょう。
 
-```typescript
+```tsx
 //OK
 return <h1>Title</h1>
 
@@ -32,13 +33,13 @@ return (
 
 また、div などの要素ではなく `Fragment` でも記述可能です。Fragment での書き方は２種類あります。
 
-```typescript
+```tsx
 return (
   <Fragment>
     <h1>Title</h1>
     <h2>Sub Title</h2>
   </Fragment>
-)
+);
 
 //または
 
@@ -47,14 +48,14 @@ return (
     <h1>Title</h1>
     <h2>Sub Title</h2>
   </>
-)
+);
 ```
 
 ### className プロパティ
 
-HTMLで使用できる class は JavaScript では予約語であるため使用できません。その代わりに、JSX では `className` を使用します。
+HTML で使用できる class は JavaScript では予約語であるため使用できません。その代わりに、JSX では `className` を使用します。
 
-```typescript
+```tsx
 <h1 className="title">Title</h1>
 ```
 
@@ -62,7 +63,7 @@ HTMLで使用できる class は JavaScript では予約語であるため使用
 
 JSX では JS (TS) の式を HTML の中で扱うようなことができます。JSX 内で記述する場合は `{}` で囲います。
 
-```typescript
+```tsx
 //このような変数があったとして
 const hello = "こんにちは"
 const numbers = [0, 1, 2, 3, 4]

@@ -1,4 +1,5 @@
 # Style
+
 [サンプルプログラム](https://github.com/sekiyan372/react-study-sample/blob/main/src/pages/week2/StyledComponents.tsx)
 
 ## React と CSS
@@ -29,8 +30,9 @@ React で CSS を記述するには様々な方法があります。
 styled components は**スタイルをあてたコンポーネントを定義する**やり方で、実際に企業などでも採用されている技術です。
 
 文章の説明よりも、実際に見た方が早いと思うので、以下のコードをみてください。
-```typescript
-import styled from 'styled-components'
+
+```tsx
+import styled from "styled-components";
 
 const Title = styled.div`
   margin: 10px;
@@ -39,15 +41,13 @@ const Title = styled.div`
   &:hover {
     opacity: 0.5;
   }
-`
+`;
 
-const Component: VFC = () => {
-  return (
-    <Title>タイトル</Title>
-  )
-}
+const Component: FC = () => {
+  return <Title>タイトル</Title>;
+};
 ```
 
-このように、`styled.`の後に HTML に存在するタグを指定することでそのタグを拡張した形でスタイルを適用できます。その後ろは必ずバッククォートで囲み、その中にCSSを書いていきましょう。
+このように、`styled.`の後に HTML に存在するタグを指定することでそのタグを拡張した形でスタイルを適用できます。その後ろは必ずバッククォートで囲み、その中に CSS を書いていきましょう。
 
 styled components では SCSS 記法がそのまま使えるのも特徴の一つです。

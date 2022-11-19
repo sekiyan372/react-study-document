@@ -1,4 +1,4 @@
-# 知ってて欲しい！モダンJSの知識
+# 知ってて欲しい！モダン JS の知識
 
 ## 変数宣言
 
@@ -12,17 +12,17 @@
 | const | × | × |
 
 ```javascript
-var val = 2
-val = 3            //◯
-var val = "hello"  //◯
+var val = 2;
+val = 3; //◯
+var val = "hello"; //◯
 
-let val = 2
-val = 3            //◯
-let val = "hello"  //×
+let val = 2;
+val = 3; //◯
+let val = "hello"; //×
 
-const val = 2
-val = 3              //×
-const val = "hello"  //×
+const val = 2;
+val = 3; //×
+const val = "hello"; //×
 ```
 
 ## テンプレート文字列
@@ -30,9 +30,9 @@ const val = "hello"  //×
 文字列の中に変数を埋め込む書き方
 
 ```javascript
-const name = "関谷"
-const age = 25
-console.log(`私の名前は${name}で、${age}歳です。`)
+const name = "関谷";
+const age = 25;
+console.log(`私の名前は${name}で、${age}歳です。`);
 
 //私の名前は関谷で、25歳です。
 ```
@@ -42,23 +42,25 @@ console.log(`私の名前は${name}で、${age}歳です。`)
 シンプルに書ける関数の書き方
 
 従来の関数
+
 ```javascript
 function func(value) {
-  return value
+  return value;
 }
 
 //もしくは
 
 const func = function (value) {
-  return value
-}
+  return value;
+};
 ```
 
 アロー関数
+
 ```javascript
 const func = (value) => {
-  return value
-}
+  return value;
+};
 ```
 
 ## 分割代入
@@ -70,15 +72,15 @@ const func = (value) => {
 ```javascript
 const profile = {
   name: "関谷",
-  age: 25
-}
+  age: 25,
+};
 
-const { name, age } = profile
-console.log(`私の名前は${name}で、${age}歳です。`)
+const { name, age } = profile;
+console.log(`私の名前は${name}で、${age}歳です。`);
 
 //別名をつける
-const { name: newName, age: newAge } = profile
-console.log(`私の名前は${newName}で、${newAge}歳です。`)
+const { name: newName, age: newAge } = profile;
+console.log(`私の名前は${newName}で、${newAge}歳です。`);
 
 //私の名前は関谷で、25歳です。
 ```
@@ -86,10 +88,10 @@ console.log(`私の名前は${newName}で、${newAge}歳です。`)
 ### 配列の分割代入
 
 ```javascript
-const profile = ["関谷", 25]
+const profile = ["関谷", 25];
 
-const [name, age] = profile
-console.log(`私の名前は${name}で、${age}歳です。`)
+const [name, age] = profile;
+console.log(`私の名前は${name}で、${age}歳です。`);
 
 //私の名前は関谷で、25歳です。
 ```
@@ -99,9 +101,9 @@ console.log(`私の名前は${name}で、${age}歳です。`)
 配列やオブジェクトの処理をまとめて書く記法
 
 ```javascript
-const nums = [1, 2]
-const addNum = (num1, num2) => num1 + num2
-console.log(addNum(...nums))
+const nums = [1, 2];
+const addNum = (num1, num2) => num1 + num2;
+console.log(addNum(...nums));
 
 //1 2
 ```
@@ -115,9 +117,9 @@ console.log(addNum(...nums))
 配列を順番に処理して、処理した結果を `新しい配列として` 返す
 
 ```javascript
-const nums = [2, 3, 5, 7, 11]
-const doubleNum = nums.map((num) => num * 2)
-console.log(...doubleNum)
+const nums = [2, 3, 5, 7, 11];
+const doubleNum = nums.map((num) => num * 2);
+console.log(...doubleNum);
 
 //4 6 10 14 22
 ```
@@ -127,9 +129,9 @@ console.log(...doubleNum)
 配列を順番に処理して、条件に一致した値のみを抽出した `新しい配列として` 返す
 
 ```javascript
-const nums = [1, 2, 5, 8, 12]
-const multiples2 = nums.filter((num) => num % 2 === 0)
-console.log(...multiples2)
+const nums = [1, 2, 5, 8, 12];
+const multiples2 = nums.filter((num) => num % 2 === 0);
+console.log(...multiples2);
 
 //2 8 12
 ```

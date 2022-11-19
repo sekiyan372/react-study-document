@@ -22,38 +22,40 @@ TypeScript では型推論という、自動で型を予測する機能がある
 また、動的片付けと何が違うの？と思うかもしれませんのでそれぞれの違いをまとめておきます。
 
 - 型推論: コンパイルのタイミングで型が決定され、その型が変更されることはない
+
 ```typescript
-let x = 1 //xはnumber型となる
-x = "hello" //xはnumber型と決定しているのでstring型を代入するとエラー
-console.log(x.substring(1, 3))
+let x = 1; //xはnumber型となる
+x = "hello"; //xはnumber型と決定しているのでstring型を代入するとエラー
+console.log(x.substring(1, 3));
 
 //エラーになる
 ```
 
 - 動的型付け: 実行時に型が決まるので、実行タイミングにより型が変化する
+
 ```javascript
-let x = 1 //xはnumber型となる
-x = "hello" //xはstring型となる
-console.log(x.substring(1, 3))
+let x = 1; //xはnumber型となる
+x = "hello"; //xはstring型となる
+console.log(x.substring(1, 3));
 
 //el
 ```
 
 ## 基本的な型の種類
 
-| 型 | 種類 | 補足 |
-| --- | --- | --- |
-| string | 文字列 |
-| number | 数値 | |
-| boolean | 真偽値 (true, false) | |
-| Array | 配列 | `Array<型名>` または `型名[]` で記述 |
-| Object | オブジェクト | `interface` や `type` を使って型指定 |
-| null | 存在しない値 | |
-| undefind | 未定義の値 | |
-| void | 関数で何も値を返さない | |
-| any | どんな値でも許容する | できる限り使用しない |
+| 型       | 種類                   | 補足                                 |
+| -------- | ---------------------- | ------------------------------------ |
+| string   | 文字列                 |
+| number   | 数値                   |                                      |
+| boolean  | 真偽値 (true, false)   |                                      |
+| Array    | 配列                   | `Array<型名>` または `型名[]` で記述 |
+| Object   | オブジェクト           | `interface` や `type` を使って型指定 |
+| null     | 存在しない値           |                                      |
+| undefind | 未定義の値             |                                      |
+| void     | 関数で何も値を返さない |                                      |
+| any      | どんな値でも許容する   | できる限り使用しない                 |
 
-**細かく見ると他にもいろいろな型があるので、その時は1回1回調べよう！！**
+**細かく見ると他にもいろいろな型があるので、その時は 1 回 1 回調べよう！！**
 
 ## 記法
 
@@ -62,8 +64,8 @@ console.log(x.substring(1, 3))
 - 型名は小文字始まり
 
 ```typescript
-const text: string = "hello"
-const num: number = 100
+const text: string = "hello";
+const num: number = 100;
 ```
 
 ### 配列
@@ -72,8 +74,8 @@ const num: number = 100
 - ２種類の記法がある
 
 ```typescript
-const arr1: Array<string> = ["hoge", "fuga", "piyo"]
-const arr2: string[] = ["foo", "bar", "baz"]
+const arr1: Array<string> = ["hoge", "fuga", "piyo"];
+const arr2: string[] = ["foo", "bar", "baz"];
 ```
 
 ### オブジェクト
@@ -103,10 +105,11 @@ const myProfile: Profile = {
 ```
 
 ### 関数
+
 - 引数、戻り値それぞれで指定できる
 
 ```typescript
-const func = (num: number): number => num * 2
+const func = (num: number): number => num * 2;
 ```
 
 ### 複合的な型 (ユニオン型)
@@ -114,10 +117,10 @@ const func = (num: number): number => num * 2
 - 複数の型を許容することができる `union` を指定することができる
 
 ```typescript
-let num: string | number = 0
-num = 1    //◯
-num = "1"  //◯
-num = true //×
+let num: string | number = 0;
+num = 1; //◯
+num = "1"; //◯
+num = true; //×
 ```
 
 ### Generics
@@ -126,24 +129,27 @@ num = true //×
 - 実は配列の時に使ってたのもこれ
 
 関数を例にした使用例
+
 ```typescript
 //通常
-const func1 = <T>(value: T) => console.log(value)
-func1<string>("hello")
+const func1 = <T>(value: T) => console.log(value);
+func1<string>("hello");
 
 //複数指定
-const func2 = <T, K>(value1: T, value2: K) => console.log(value1, value2)
-func2<string, number>("hello", 1)
+const func2 = <T, K>(value1: T, value2: K) => console.log(value1, value2);
+func2<string, number>("hello", 1);
 
 //継承
-const func3 = <T extends unknown>(value: T) => console.log(value)
-func3<string>("hello")
+const func3 = <T extends unknown>(value: T) => console.log(value);
+func3<string>("hello");
 ```
 
 # 参考になるサイト
 
 困った時の参考書！
-- [サバイバルTypeScript](https://typescriptbook.jp/)
 
-interface と typeについて詳しく知りたい人
-- [interfaceとtypeの違い、そして何を使うべきかについて](https://zenn.dev/luvmini511/articles/6c6f69481c2d17)
+- [サバイバル TypeScript](https://typescriptbook.jp/)
+
+interface と type について詳しく知りたい人
+
+- [interface と type の違い、そして何を使うべきかについて](https://zenn.dev/luvmini511/articles/6c6f69481c2d17)
